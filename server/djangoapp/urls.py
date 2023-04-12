@@ -8,10 +8,12 @@ urlpatterns = [
     # route is a string contains a URL pattern
     # view refers to the view function
     # name the URL
-
     # path for about view
+    path(route='djangoapp/about', view=views.about_view, name='about_view'),
+
 
     # path for contact us view
+    path(route='djangoapp/contact', view=views.contact_view, name='contact_view'),
 
     # path for registration
 
